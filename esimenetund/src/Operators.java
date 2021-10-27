@@ -114,11 +114,20 @@ public class Operators {
         double sum = vaheSum * 100; // punkt 3
         double remainder = sum % 40; // punkt 4
         System.out.println("Jääk on " + remainder);
-        boolean isRemainder = (remainder == 0) ? true : false; //punkt 5
+        boolean isRemainder = (remainder != 0) ? true : false; //punkt 5
         System.out.println(isRemainder); //punkt 6
         if (isRemainder) { //punkt 7
             System.out.println("Jääki jäi üle");
         }
+        // && || !(not)
+        /*
+        1 2 && || !1
+        T T  T  T  F
+        T F  F  T  F
+        F T  F  T  T
+        F F  F  F  T
+        loogikatabel
+         */
     }
 
 }
