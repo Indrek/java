@@ -1,0 +1,8 @@
+1) 
+Saime NullPointerExceptioneid, kuna konstruktoris oli ArrayList initserimata,
+Lisasin selle juurde (rida 12 MobilePhone klassis)
+
+2)
+Kui lisada 2 kontakti ning seejärel muuta teise kontakti nimi esimesega samaks,
+siis kõik toimis (kuigi peaks errori andma, sama nimega kontaktid pole meie telefonis lubatud)
+Viga oli updateContact meetodis, lisatud juurde read 29-32 (MobilePhone klassis).

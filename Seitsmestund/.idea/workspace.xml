@@ -27,13 +27,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ploymorphismveel.Main" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lahendus.Main" />
       <module name="Seitsmestund" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ploymorphismveel.*" />
+          <option name="PATTERN" value="lahendus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
