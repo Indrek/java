@@ -1,6 +1,7 @@
-package playlist;
+package kodutoo;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Song {
 
@@ -21,7 +22,8 @@ public class Song {
         return this.title + " : " + this.duration;
     }
 
-    public boolean addToPlaylist(LinkedList<Song> playList) {
+    //kodutöö ül
+    public boolean addToPlaylist(List<Song> playList) {
         if (this != null) {
             playList.add(this);
             return true;
@@ -29,4 +31,5 @@ public class Song {
         System.out.println("Error");
         return false;
     }
+
 }

@@ -1,4 +1,5 @@
-package playlist;
+package kodutoo;
+
 
 import java.util.*;
 
@@ -19,7 +20,7 @@ public class Main {
     //eelmises ülesandes (linkedlist) (enne, kui hakkasime directionit trackima)
     //boonus: lisa võimalus lugusid playlistist eemaldada (listIterator.remove())
 
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static List<Album> albums = new ArrayList<>();
     public static void main(String[] args) {
 
         Album album = new Album("Why Try Harder - The Greatest Hits", "Fatboy Slim");
@@ -40,7 +41,7 @@ public class Main {
         album.addSong("Self vs Self",4.75);
         albums.add(album);
 
-        LinkedList<Song> playList = new LinkedList<>();
+        List<Song> playList = new LinkedList<>();
         albums.get(0).addToPlaylist("Praise You", playList);
         albums.get(0).addToPlaylist("Right Here Right Now", playList);
         albums.get(0).addToPlaylist("Eat Sleep Rave Repeat", playList); //pole olemas
@@ -56,7 +57,7 @@ public class Main {
         play(playList);
     }
 
-    private static void play(LinkedList<Song> playList) {
+    private static void play(List<Song> playList) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
         boolean forward = true;
@@ -151,14 +152,14 @@ public class Main {
     private static void printMenu() {
         System.out.println("Available actions: \npress");
         System.out.println( "0 - to quit\n" +
-                            "1 - to play next song\n" +
-                            "2 - to play previous song\n" +
-                            "3 - to replay current song\n" +
-                            "4 - list songs in the playlist\n" +
-                            "5 - print available actions\n" +
-                            "6 - remove song from playlist");
+                "1 - to play next song\n" +
+                "2 - to play previous song\n" +
+                "3 - to replay current song\n" +
+                "4 - list songs in the playlist\n" +
+                "5 - print available actions\n" +
+                "6 - remove song from playlist");
     }
-    private static void printList(LinkedList<Song> playList) {
+    private static void printList(List<Song> playList) {
         Iterator<Song> iterator = playList.iterator(); //tavaline iteraator, ei saa tagasi minna.
         System.out.println("========================");
         while (iterator.hasNext()) {
